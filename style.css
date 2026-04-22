@@ -1,5 +1,4 @@
-@import url('https://fonts.google.com/css2?family=Roboto&display=swap');
- 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 :root {
     --body-color: #cfcdcd;
     --background-color: #181717;
@@ -128,7 +127,7 @@ a[href] {
     padding-bottom: 1rem;
     padding-left: 1cm;
  
-    background-color: color(srgb 0.10 0.10 0.15);
+    background-color: #1a1a26;
 }
  
 /**
@@ -186,14 +185,12 @@ nav {
     position: sticky;
     top: 0;
  
-    /* Nested Selector – nav a inside nav */
-    & a {
+    nav a {
         color: var(--body-color, #cfcdcd);
         text-decoration: none;
     }
- 
-    /* Nested :has() – style nav when it contains a .nav-link */
-    &:has(.nav-link) {
+    
+    nav:has(.nav-link) {
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 }
